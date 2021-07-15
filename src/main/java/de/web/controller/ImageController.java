@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ImageController {
 
-    final Base64ImageCoderService base64ImageCoderService;
+    private final Base64ImageCoderService base64ImageCoderService;
     public ImageController(Base64ImageCoderService base64ImageCoderService) {
         this.base64ImageCoderService = base64ImageCoderService;
     }
